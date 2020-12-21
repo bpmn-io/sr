@@ -1,0 +1,30 @@
+{
+  "name": "node-project",
+  "description": "Node project description",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikku/node-project"
+  },
+  "author": "Nico Rehwaldt <https://github.com/nikku>",
+  "engines": {
+    "node": ">= 14"
+  },
+  "license": "MIT",
+  "scripts": {
+    "all": "run-s lint test",
+    "lint": "eslint .",
+    "dev": "npm test -- --watch",
+    "test": "mocha -r esm 'test/*.js'"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-bpmn-io": "^0.11.0",
+    "esm": "^3.2.25",
+    "mocha": "^8.2.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
