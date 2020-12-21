@@ -5,3 +5,7 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 ## Unreleased
 
 ___Note:__ Yet to be released changes appear here._
+
+## 0.0.1
+
+_Initial release._
