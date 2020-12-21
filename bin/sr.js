@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const mri = require('mri');
 
 const fs = require('fs');
