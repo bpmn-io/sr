@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to [node-project](https://github.com/nikku/node-project) are documented here. We use [semantic versioning](http://semver.org/) for releases.
+All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. We use [semantic versioning](http://semver.org/) for releases.
 
 ## Unreleased
 
