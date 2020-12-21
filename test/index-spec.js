@@ -12,7 +12,7 @@ const log = console.log;
 describe('@bpmn-io/sr', function() {
 
   // timeout after one minute
-  this.timeout(60000);
+  this.timeout(120000);
 
   let cwd;
   let trace;
