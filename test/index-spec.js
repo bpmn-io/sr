@@ -6,8 +6,6 @@ import fs from 'fs';
 import os from 'os';
 import path from 'path';
 
-const log = console.log;
-
 
 describe('@bpmn-io/sr', function() {
 
@@ -15,20 +13,12 @@ describe('@bpmn-io/sr', function() {
   this.timeout(120000);
 
   let cwd;
-  let trace;
 
   beforeEach(function() {
-    trace = [];
     cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'bpmn-io-sr-test-'));
-
-    console.log = function(...args) {
-      trace.push(args);
-    };
   });
 
   afterEach(function() {
-    console.log = log;
-
     fs.rmdirSync(cwd, { recursive: true });
   });
 
@@ -56,13 +46,6 @@ describe('@bpmn-io/sr', function() {
 
     // project installed
     expect(fs.existsSync(path.join(cwd, 'bpmn-io-bpmn-moddle/node_modules'))).to.be.true;
-
-    expect(trace).to.eql([
-      ['clone %s %s', 'bpmn-io/bpmn-moddle', ''],
-      ['clone %s %s', 'bpmn-io/moddle', '(branch=master)'],
-      ['install', 'bpmn-io/bpmn-moddle'], [ 'link %s -> %s', 'bpmn-io/moddle', 'bpmn-io/bpmn-moddle'],
-      ['run <%s> in %s', 'npm run lint', 'bpmn-io/bpmn-moddle']
-    ]);
   });
 
 });
