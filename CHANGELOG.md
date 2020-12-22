@@ -6,6 +6,11 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.0.3
+
+* `FEAT`: clone repositories in parallel
+* `CHORE`: improve CLI output
+
 ## 0.0.2
 
 * `FIX`: add shebang to executable
