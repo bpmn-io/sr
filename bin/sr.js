@@ -70,4 +70,8 @@ setupAndRun({
   verbose,
   cwd,
   cmd
+}).catch(err => {
+  console.err(err);
+
+  process.exit(1);
 });

@@ -33,7 +33,7 @@ describe('@bpmn-io/sr', function() {
   });
 
 
-  it('should setup and run locally', function() {
+  it('should setup and run locally', async function() {
 
     // given
     const options = {
@@ -47,7 +47,7 @@ describe('@bpmn-io/sr', function() {
     };
 
     // when
-    setupAndRun(options);
+    await setupAndRun(options);
 
     // then
     // projects setup
