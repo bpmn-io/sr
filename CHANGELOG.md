@@ -6,6 +6,10 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.0.6
+
+* `FIX`: correct binary not working
+
 ## 0.0.5
 
 * `FEAT`: color output
