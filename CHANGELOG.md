@@ -6,6 +6,10 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.2.0
+
+* `FEAT`: expose `sr` executable
+
 ## 0.1.0
 
 * `DOCS`: document installation
