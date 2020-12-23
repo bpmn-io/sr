@@ -6,6 +6,10 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.0.8
+
+* `FIX`: correct cli consistency check order
+
 ## 0.0.7
 
 * `FIX`: correct cli error output
