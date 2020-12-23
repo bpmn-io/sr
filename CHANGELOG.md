@@ -6,6 +6,11 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.0.5
+
+* `FEAT`: color output
+* `CHORE`: reduce bundle size
+
 ## 0.0.4
 
 * `FEAT`: improve CLI output, round :two:
