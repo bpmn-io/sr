@@ -46,12 +46,6 @@ const {
   }
 });
 
-
-if (_.length !== 1) {
-  console.error('must supply single target repository');
-  process.exit(1);
-}
-
 if (version) {
   console.log(pkg.version);
   process.exit(0);
@@ -63,6 +57,10 @@ if (help) {
   process.exit(0);
 }
 
+if (_.length !== 1) {
+  console.error('must supply single target repository');
+  process.exit(1);
+}
 
 setupAndRun({
   repo: _[0],
