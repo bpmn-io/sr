@@ -7,11 +7,18 @@ A simple setup and run utility for bpmn.io based projects.
 
 ## Usage
 
-Install the tool globally or run it via `npx`:
+Install the tool globally to expose the `sr` utility:
 
 ```sh
-npx @bpmn-io/sr bpmn-io/bpmn-js#some-feature-branch -l bpmn-io/diagram-js#some-feature-branch
+npm install -g @bpmn-io/sr
 ```
+
+Or execute it directly via `npx`:
+
+```sh
+npx @bpmn-io/sr bpmn-io/bpmn-js#some-branch -l bpmn-io/diagram-js#some-branch
+```
+
 
 ## Synopsis
 
