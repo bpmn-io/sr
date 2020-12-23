@@ -42,8 +42,7 @@ const {
   alias: {
     v: 'verbose',
     l: 'link',
-    h: 'help',
-    c: 'cmd'
+    h: 'help'
   }
 });
 
