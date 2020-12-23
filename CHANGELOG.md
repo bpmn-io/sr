@@ -6,6 +6,11 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.0.7
+
+* `FIX`: correct cli error output
+* `FIX`: alias command line shortcut `c` -> `cmd`
+
 ## 0.0.6
 
 * `FIX`: correct binary not working
