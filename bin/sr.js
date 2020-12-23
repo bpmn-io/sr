@@ -42,7 +42,8 @@ const {
   alias: {
     v: 'verbose',
     l: 'link',
-    h: 'help'
+    h: 'help',
+    c: 'cmd'
   }
 });
 
@@ -71,7 +72,7 @@ setupAndRun({
   cwd,
   cmd
 }).catch(err => {
-  console.err(err);
+  console.error(err);
 
   process.exit(1);
 });
