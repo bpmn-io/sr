@@ -11,7 +11,9 @@ const { setupAndRun } = require('..');
 
 
 const helpText = `
-Usage: sr [options] target
+Usage: sr [options] repository
+
+Locally setup a GitHub repository run a command in it, once completed.
 
 Options:
     -l, --link=repo     link the given repository with
@@ -24,9 +26,9 @@ Options:
     -v, --verbose       enable verbose output
 
 Examples:
-  sr -l org/repo1 -l org/repo2#branch org/targetRepo
+    $ sr -l org/repo1 -l org/repo2#branch org/targetRepo
 
-  sr -c 'npm run test' bpmn-io/diagram-js
+    $ sr -c 'npm run test' bpmn-io/diagram-js
 `;
 
 const {
@@ -59,7 +61,7 @@ if (help) {
 }
 
 if (_.length !== 1) {
-  console.error('must supply single target repository');
+  console.error('must supply single repository');
   process.exit(1);
 }
 
