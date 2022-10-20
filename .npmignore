@@ -1,7 +1,0 @@
-!dist
-.github
-test
-lib
-.eslintignore
-.eslintrc
-rollup.config.js
