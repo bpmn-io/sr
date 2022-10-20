@@ -47,6 +47,6 @@
     "zen-observable": "^0.8.15"
   },
   "dependencies": {
-    "mri": "^1.1.6"
+    "mri": "^1.2.0"
   }
 }
