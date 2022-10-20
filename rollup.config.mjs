@@ -20,7 +20,7 @@ export default configs;
 
 // helpers //////////////////////
 
-function pgl(plugins=[]) {
+function pgl(plugins = []) {
   return [
     nodeResolve({
       mainFields: [
