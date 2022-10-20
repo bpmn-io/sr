@@ -1,13 +1,17 @@
-import { expect } from 'chai';
+const { expect } = require('chai');
 
-import { setupAndRun } from '..';
+const { setupAndRun } = require('..');
 
-import fs from 'fs';
-import os from 'os';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 
 describe('@bpmn-io/sr', function() {
+
+  before(function() {
+    fs.rmSync('tmp', { force: true, recursive: true });
+    fs.mkdirSync('tmp');
+  });
 
   // timeout after one minute
   this.timeout(120000);
@@ -15,11 +19,7 @@ describe('@bpmn-io/sr', function() {
   let cwd;
 
   beforeEach(function() {
-    cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'bpmn-io-sr-test-'));
-  });
-
-  afterEach(function() {
-    fs.rmdirSync(cwd, { recursive: true });
+    cwd = fs.mkdtempSync(path.join('tmp', 'bpmn-io-sr-test-'));
   });
 
 
