@@ -6,6 +6,10 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.3.1
+
+* `CHORE`: mark as `npm@8` compatible
+
 ## 0.3.0
 
 * `FEAT`: support `npm@8`
