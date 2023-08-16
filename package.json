@@ -1,7 +1,7 @@
 {
   "name": "@bpmn-io/sr",
   "description": "A setup and run utility for bpmn.io based projects",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "main": "dist/index.js",
   "bin": {
     "sr": "bin/sr.js"
