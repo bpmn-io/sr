@@ -6,6 +6,12 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.4.0
+
+* `FIX`: clean running executables on `CTRL+C`
+* `CHORE`: require `node >= 16`
+* `DEPS`: bump dependencies
+
 ## 0.3.1
 
 * `CHORE`: mark as `npm@8` compatible
