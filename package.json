@@ -26,8 +26,9 @@
   "license": "MIT",
   "scripts": {
     "all": "run-s lint test",
+    "bundle": "rollup -c",
     "lint": "eslint .",
-    "pretest": "rollup -c",
+    "pretest": "npm run bundle",
     "dev": "npm test -- --watch",
     "test": "mocha 'test/*.js'"
   },
