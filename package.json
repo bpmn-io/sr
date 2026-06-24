@@ -20,8 +20,8 @@
   },
   "author": "Nico Rehwaldt <https://github.com/nikku>",
   "engines": {
-    "node": ">= 16",
-    "npm": ">= 8"
+    "node": ">= 24",
+    "npm": ">= 11"
   },
   "license": "MIT",
   "scripts": {
