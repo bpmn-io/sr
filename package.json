@@ -30,7 +30,7 @@
     "lint": "eslint .",
     "pretest": "npm run bundle",
     "dev": "npm test -- --watch",
-    "test": "mocha 'test/*.js'"
+    "test": "mocha \"test/*.js\""
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^29.0.3",
