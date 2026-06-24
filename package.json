@@ -47,7 +47,7 @@
     "prexit": "^2.3.0",
     "rollup": "^4.62.2",
     "tree-kill": "^1.2.2",
-    "zen-observable": "^0.8.15"
+    "zen-observable": "^0.10.0"
   },
   "dependencies": {
     "mri": "^1.2.0"
