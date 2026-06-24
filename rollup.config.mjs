@@ -8,8 +8,7 @@ const configs = [
     input: './lib/index.js',
     output: {
       file: `${outputDir}/index.js`,
-      format: 'cjs',
-      exports: 'named'
+      format: 'cjs'
     },
     plugins: pgl()
   }
