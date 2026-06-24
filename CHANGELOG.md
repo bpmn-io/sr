@@ -6,6 +6,11 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.5.0
+
+* `CHORE`: use `nano-spawn` for smaller bundle size
+* `CHORE`: debug log killed processes
+
 ## 0.4.3
 
 * `CHORE`: drop superfluous log statements
