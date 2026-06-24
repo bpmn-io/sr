@@ -29,7 +29,7 @@ describe('@bpmn-io/sr', function() {
     const options = {
       repo: 'bpmn-io/bpmn-moddle',
       links: [
-        'bpmn-io/moddle#master'
+        'bpmn-io/moddle#main'
       ],
       cwd,
       cmd: 'npm run lint',
