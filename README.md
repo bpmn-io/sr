@@ -1,6 +1,6 @@
 # @bpmn-io/sr
 
-[![CI Status](https://img.shields.io/github/workflow/status/bpmn-io/sr/CI/main)](https://github.com/bpmn-io/sr/actions?query=workflow%3ACI)
+[![CI](https://github.com/bpmn-io/sr/actions/workflows/CI.yml/badge.svg)](https://github.com/bpmn-io/sr/actions/workflows/CI.yml)
 
 A simple setup and run utility for bpmn.io based projects.
 
