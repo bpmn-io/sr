@@ -3,6 +3,7 @@
 const mri = require('mri');
 
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 
 const pkg = require('../package.json');
@@ -35,7 +36,7 @@ const {
   _,
   link = [],
   version = false,
-  cwd = fs.mkdtempSync(path.join(process.cwd(), 'bpmn-io-sr-')),
+  cwd = fs.mkdtempSync(path.join(os.tmpdir(), 'bpmn-io-sr-')),
   cmd = 'npm start',
   verbose = false,
   help = false
