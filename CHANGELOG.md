@@ -6,6 +6,10 @@ All notable changes to [sr](https://github.com/bpmn-io/sr) are documented here. 
 
 ___Note:__ Yet to be released changes appear here._
 
+## 0.6.0
+
+* `CHORE`: use system temp directory unless `cwd` is given ([#1](https://github.com/bpmn-io/sr/issue/1), [#2](https://github.com/bpmn-io/sr/pull/2))
+
 ## 0.5.0
 
 * `CHORE`: use `nano-spawn` for smaller bundle size
