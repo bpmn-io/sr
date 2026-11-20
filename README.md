@@ -29,7 +29,8 @@ Locally setup a GitHub repository run a command in it, once completed.
 
 Options:
     -l, --link=repo     link the given repository with
-                        target repository
+                        target repository; append a path to
+                        link a package of a monorepo
     -c, --cmd=test      execute <test> in the target repository
                         per default <npm start> is executed
         --cwd=dir       use <dir> as a working directory
@@ -39,6 +40,8 @@ Options:
 
 Examples:
     $ sr -l org/repo1 -l org/repo2#branch org/targetRepo
+
+    $ sr -l org/monorepo/packages/foo#branch org/targetRepo
 
     $ sr -c 'npm run test' bpmn-io/diagram-js
 ```
