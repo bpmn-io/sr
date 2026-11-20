@@ -48,4 +48,47 @@ describe('@bpmn-io/sr', function() {
     expect(fs.existsSync(path.join(cwd, 'bpmn-io-bpmn-moddle/node_modules'))).to.be.true;
   });
 
+
+  it('should link package of a monorepo', async function() {
+
+    // given
+    const options = {
+      repo: 'bpmn-io/bpmn-moddle',
+      links: [
+        'bpmn-io/themes/packages/theme#main'
+      ],
+      cwd,
+      cmd: 'npm run lint'
+    };
+
+    // when
+    await setupAndRun(options);
+
+    // then
+    const linked = path.join(cwd, 'bpmn-io-bpmn-moddle/node_modules/@bpmn-io/theme');
+
+    expect(fs.realpathSync(linked)).to.eql(fs.realpathSync(path.join(cwd, 'bpmn-io-themes/packages/theme')));
+  });
+
+
+  it('should reject conflicting branches of one repository', async function() {
+
+    // given
+    const options = {
+      repo: 'bpmn-io/bpmn-moddle',
+      links: [
+        'bpmn-io/themes/packages/theme#main',
+        'bpmn-io/themes/packages/c4-theme#some-branch'
+      ],
+      cwd,
+      cmd: 'npm run lint'
+    };
+
+    // when
+    const error = await setupAndRun(options).catch(err => err);
+
+    // then
+    expect(error.message).to.eql('conflicting branches for <bpmn-io/themes>: <main> and <some-branch>');
+  });
+
 });
